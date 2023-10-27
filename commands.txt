@@ -275,4 +275,80 @@ To https://github.com/ankurbhargava0511/git_command.git
  * [new branch]      feature -> feature
 branch 'feature' set up to track 'origin/feature'.
 
+
+
 Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git push --set-upstream origin feature
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 882 bytes | 882.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/ankurbhargava0511/git_command/pull/new/feature
+remote:
+To https://github.com/ankurbhargava0511/git_command.git
+ * [new branch]      feature -> feature
+branch 'feature' set up to track 'origin/feature'.
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ ^C
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git change checkout main
+git: 'change' is not a git command. See 'git --help'.
+
+The most similar command is
+        whatchanged
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+        commands.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git add .
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git commit -m "test file"
+[feature eccc8ac] test file
+ 1 file changed, 59 insertions(+)
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.18 KiB | 1.18 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ankurbhargava0511/git_command.git
+   e5f2efe..eccc8ac  feature -> feature
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git pull
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 1.20 KiB | 615.00 KiB/s, done.
+From https://github.com/ankurbhargava0511/git_command
+   f7bfaf1..4c1aa29  main       -> origin/main
+Updating f7bfaf1..4c1aa29
+Fast-forward
+ commands.txt | 122 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 122 insertions(+)
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+
