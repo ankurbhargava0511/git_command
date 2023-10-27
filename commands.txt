@@ -154,3 +154,24 @@ Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/ankurbhargava0511/git_command.git
    49bacd8..1d9b0f9  main -> main
+
+
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git branch
+* main
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git branch feature
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git branch
+  feature
+* main
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$
