@@ -129,3 +129,8 @@ Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/ankurbhargava0511/git_command.git
    2d44657..667c510  main -> main
+
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git pull
+Already up to date.
