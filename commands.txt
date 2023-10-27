@@ -217,3 +217,62 @@ To push the current branch and set the remote as upstream, use
 To have this happen automatically for branches without a tracking
 upstream, see 'push.autoSetupRemote' in 'git help config'.
 
+
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git push --set--upstream origin feature
+error: unknown option `set--upstream'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all branches
+    --branches            alias of --all
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --branches or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --force-if-includes   require remote updates to be integrated locally
+    --recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack> receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git push --set-upstream origin feature
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 882 bytes | 882.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/ankurbhargava0511/git_command/pull/new/feature
+remote:
+To https://github.com/ankurbhargava0511/git_command.git
+ * [new branch]      feature -> feature
+branch 'feature' set up to track 'origin/feature'.
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
