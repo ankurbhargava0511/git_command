@@ -154,3 +154,66 @@ Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/ankurbhargava0511/git_command.git
    49bacd8..1d9b0f9  main -> main
+
+
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git branch
+* main
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git branch feature
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git branch
+  feature
+* main
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git status
+On branch feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git add .
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git commit -m "test from branch"
+[feature 37adfef] test from branch
+ 1 file changed, 21 insertions(+)
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git push
+fatal: The current branch feature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git status
+On branch feature
+nothing to commit, working tree clean
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (feature)
+$ git push
+fatal: The current branch feature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
