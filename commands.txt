@@ -1,12 +1,13 @@
+
 Ankur@ANKUR-DESKTOP MINGW64 /d/Development
 $ git clone https://github.com/ankurbhargava0511/git_command.git
 Cloning into 'git_command'...
 warning: You appear to have cloned an empty repository.
 
+
 Ankur@ANKUR-DESKTOP MINGW64 /d/Development
 $ cd git_command/
 
-Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
 
 Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
 $ git  status
@@ -20,3 +21,37 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git add commands.txt
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git  status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   commands.txt
+
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git commit -m "adding file"
+[main (root-commit) c4c3a89] adding file
+ 1 file changed, 22 insertions(+)
+ create mode 100644 commands.txt
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 519 bytes | 519.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ankurbhargava0511/git_command.git
+ * [new branch]      main -> main
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$
