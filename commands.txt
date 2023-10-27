@@ -86,3 +86,46 @@ To https://github.com/ankurbhargava0511/git_command.git
    c4c3a89..2d44657  main -> main
 
 
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git commit -m "test commit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git add .
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git commit -m "test changes"
+[main 667c510] test changes
+ 1 file changed, 32 insertions(+), 1 deletion(-)
+
+Ankur@ANKUR-DESKTOP MINGW64 /d/Development/git_command (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 617 bytes | 617.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ankurbhargava0511/git_command.git
+   2d44657..667c510  main -> main
